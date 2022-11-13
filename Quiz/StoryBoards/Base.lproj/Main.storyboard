@@ -244,7 +244,7 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vta-CS-6c0">
                                 <rect key="frame" x="0.0" y="92.5" width="320" height="4"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QuestionText" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2U-0X-9Gg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R2U-0X-9Gg">
                                 <rect key="frame" x="16" y="104.5" width="288" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -279,7 +279,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="multipleQuestionStackView" destination="eWA-Ca-Id1" id="UcV-cR-yeu"/>
-                        <outlet property="questionProgressVIew" destination="Vta-CS-6c0" id="Ecd-mQ-hqw"/>
+                        <outlet property="questionProgressView" destination="Vta-CS-6c0" id="Odc-1D-jmK"/>
                         <outlet property="questionTextLabel" destination="R2U-0X-9Gg" id="YJW-CI-h8f"/>
                         <outlet property="rangedQuestionSlider" destination="837-bQ-Kzl" id="9SQ-qy-IbN"/>
                         <outlet property="rangedQuestionStackView" destination="Htx-Ez-YYN" id="j90-yi-fYM"/>
