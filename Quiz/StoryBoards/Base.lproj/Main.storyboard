@@ -279,8 +279,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="multipleQuestionStackView" destination="eWA-Ca-Id1" id="UcV-cR-yeu"/>
-                        <outlet property="questionProgressView" destination="Vta-CS-6c0" id="Odc-1D-jmK"/>
-                        <outlet property="questionTextLabel" destination="R2U-0X-9Gg" id="YJW-CI-h8f"/>
+                        <outlet property="questionProgressView" destination="Vta-CS-6c0" id="fys-Or-n0L"/>
+                        <outlet property="questionTextLabel" destination="R2U-0X-9Gg" id="eH3-0x-Iau"/>
                         <outlet property="rangedQuestionSlider" destination="837-bQ-Kzl" id="9SQ-qy-IbN"/>
                         <outlet property="rangedQuestionStackView" destination="Htx-Ez-YYN" id="j90-yi-fYM"/>
                         <outlet property="singleQuestionStackView" destination="IbC-uK-hMK" id="EuQ-qD-kz2"/>

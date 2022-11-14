@@ -10,11 +10,11 @@ import UIKit
 class QuestionsViewController: UIViewController {
     
     // MARK: - IBOutlets
-    @IBOutlet var questionTextLabel: UILabel!
     @IBOutlet var questionProgressView: UIProgressView!
+    @IBOutlet var questionTextLabel: UILabel!
     
     @IBOutlet var singleQuestionStackView: UIStackView!
-    @IBOutlet var singleQuestionButtons: [UIButton]!
+    @IBOutlet v/Users/macbookair13/Desktop/SWIFTBOOK/Login App/HW_2/HW_2.06_SergeySokolov/Models/User.swiftar singleQuestionButtons: [UIButton]!
     
     @IBOutlet var multipleQuestionStackView: UIStackView!
     @IBOutlet var multipleQuestionLabels: [UILabel]!
@@ -32,6 +32,7 @@ class QuestionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        questionTextLabel.text = "SET"
         updateUI()
         
     }
@@ -63,13 +64,13 @@ extension QuestionsViewController {
         let currentQuestion = questions[questionIndeх]
         
         // Set current quesion for question label
-      questionTextLabel.text = "SET"//currentQuestion.title
-        
+//      questionTextLabel.text = "SET"//currentQuestion.title
+
         // Calculete current progress
         let totalProgress = Float(questionIndeх) / Float(questions.count)
         
         // Set progressView
-     questionProgressView.setProgress(totalProgress, animated: true)
+    questionProgressView.setProgress(totalProgress, animated: true)
         
         // Set navigation title
         title = "Вопрос № \(questionIndeх + 1) из \(questions.count)"
