@@ -13,8 +13,7 @@ class ResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        self.navigationItem.setHidesBackButton(true, animated: false)
     }
     
     @IBAction func doneButtonTapped(_ sender: UIBarButtonItem) {
