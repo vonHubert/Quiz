@@ -75,7 +75,7 @@ extension Question {
                     Answer(title: "Отлично", animal: .dog),
                     Answer(title: "Ненавижу", animal: .cat),
                     Answer(title: "А что это?", animal: .rabbit),
-                    Answer(title: "Проспал", animal: .turtle)
+                    Answer(title: "Индиферентно", animal: .turtle)
                 ]
             )
         ]

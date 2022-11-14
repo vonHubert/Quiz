@@ -20,6 +20,10 @@ class ResultsViewController: UIViewController {
         
     }
     
+    @IBAction func printAnswersForTesting(_ sender: Any) {
+       // print(chosenAnswers)
+    }
+    
     deinit{
         print("ResultsVC has been delocated")
     }

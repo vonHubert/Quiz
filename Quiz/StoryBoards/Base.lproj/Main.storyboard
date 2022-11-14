@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Questions View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="QuestionsViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -270,13 +270,7 @@
                             <constraint firstItem="c9I-X7-Bhv" firstAttribute="trailing" secondItem="R2U-0X-9Gg" secondAttribute="trailing" constant="16" id="zda-t0-58i"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос № " id="WTI-9Q-jDy">
-                        <barButtonItem key="rightBarButtonItem" title="3й экран (temp)" id="UOx-k8-qgK">
-                            <connections>
-                                <segue destination="21l-4r-KZ0" kind="show" id="1DL-jZ-6LP"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Вопрос № " id="WTI-9Q-jDy"/>
                     <connections>
                         <outlet property="multipleQuestionStackView" destination="eWA-Ca-Id1" id="UcV-cR-yeu"/>
                         <outlet property="questionProgressView" destination="Vta-CS-6c0" id="fys-Or-n0L"/>
@@ -334,6 +328,15 @@
                                     <constraint firstItem="ilr-iG-a00" firstAttribute="centerX" secondItem="5mt-ZE-0aX" secondAttribute="centerX" id="XWB-UT-8p6"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugG-8k-Ssh">
+                                <rect key="frame" x="123" y="369" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="printAnswersForTesting:" destination="21l-4r-KZ0" eventType="touchUpInside" id="Bes-aC-OOd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SBe-47-H0M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -360,7 +363,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IiF-rC-Y7l" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="clh-jP-5MM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -373,9 +376,6 @@
             <point key="canvasLocation" x="826.875" y="-27.464788732394368"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="1DL-jZ-6LP"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
