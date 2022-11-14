@@ -9,6 +9,8 @@ import UIKit
 
 class ResultsViewController: UIViewController {
     
+    var chosenAnswers: [Answer]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +23,8 @@ class ResultsViewController: UIViewController {
     }
     
     @IBAction func printAnswersForTesting(_ sender: Any) {
-       // print(chosenAnswers)
+        print("results structure:")
+        print(chosenAnswers)
     }
     
     deinit{

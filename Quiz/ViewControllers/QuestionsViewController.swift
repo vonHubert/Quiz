@@ -80,7 +80,13 @@ extension QuestionsViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let finalAnswersVC = segue.destination as? ResultsViewController else { return }
+        finalAnswersVC.chosenAnswers = chosenAnswers
+    }
 }
+
+
 
 
 // MARK: - Private methods
