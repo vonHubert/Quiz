@@ -9,6 +9,8 @@ import UIKit
 
 class ResultsViewController: UIViewController {
     // MARK: - IBOutlets
+    @IBOutlet var resultAnimalLabel: UILabel!
+    @IBOutlet var resultAnimalDescription: UILabel!
     
     
     // MARK: - Received Properties
@@ -40,6 +42,7 @@ class ResultsViewController: UIViewController {
         print(animalFrequency)
         findMostFrequentAnimal()
         print(finalResult)
+        updateLabels()
     }
     
     // MARK: - Answer calculation
@@ -70,4 +73,10 @@ class ResultsViewController: UIViewController {
        print(mostFrequentAnimal)
         finalResult = mostFrequentAnimal?.key
     }
+    
+    private func updateLabels() {
+        resultAnimalLabel.text = "Ты - \(finalResult.rawValue)"
+        resultAnimalDescription.text = finalResult.definition
+    }
+    
 }
