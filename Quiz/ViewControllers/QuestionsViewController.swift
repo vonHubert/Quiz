@@ -49,14 +49,17 @@ class QuestionsViewController: UIViewController {
         let currentAnswer = currentAnswers[buttonIndex]
         chosenAnswers.append(currentAnswer)
         goToNextQuestion()
+       // print(currentAnswer)
     }
     
     @IBAction func multipleAnswerButtonTapped() {
-        for (multipleSwitch, answer) in zip(multipleQuestionSwitches, currentAnswers) {
+        for (multipleSwitch, currentAnswer) in zip(multipleQuestionSwitches, currentAnswers) {
             if multipleSwitch.isOn {
-                chosenAnswers.append(answer)
+                chosenAnswers.append(currentAnswer)
+                //print(currentAnswer)
             }
         }
+        
         goToNextQuestion()
     }
     
