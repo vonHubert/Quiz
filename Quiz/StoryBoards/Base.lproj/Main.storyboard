@@ -308,16 +308,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="5mt-ZE-0aX">
-                                <rect key="frame" x="14.5" y="235.5" width="291.5" height="97.5"/>
+                                <rect key="frame" x="71.5" y="235.5" width="177" height="97.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ты - ЖИВОТНАЙЕ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYE-ig-vKH">
-                                        <rect key="frame" x="0.0" y="0.0" width="291.5" height="42"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="animal label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYE-ig-vKH">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Да, именно так)))" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilr-iG-a00">
-                                        <rect key="frame" x="0.0" y="77" width="291.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilr-iG-a00">
+                                        <rect key="frame" x="0.0" y="77" width="177" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -328,21 +328,11 @@
                                     <constraint firstItem="ilr-iG-a00" firstAttribute="centerX" secondItem="5mt-ZE-0aX" secondAttribute="centerX" id="XWB-UT-8p6"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugG-8k-Ssh">
-                                <rect key="frame" x="105.5" y="487.5" width="109" height="34.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="testResults"/>
-                                <connections>
-                                    <action selector="printAnswersForTesting:" destination="21l-4r-KZ0" eventType="touchUpInside" id="Bes-aC-OOd"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SBe-47-H0M"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5mt-ZE-0aX" firstAttribute="centerX" secondItem="qUj-36-hiC" secondAttribute="centerX" id="4qr-o6-7jt"/>
-                            <constraint firstItem="SBe-47-H0M" firstAttribute="bottom" secondItem="ugG-8k-Ssh" secondAttribute="bottom" constant="46" id="Q0X-7O-u6f"/>
-                            <constraint firstItem="ugG-8k-Ssh" firstAttribute="centerX" secondItem="qUj-36-hiC" secondAttribute="centerX" id="ScM-x1-T5y"/>
                             <constraint firstItem="5mt-ZE-0aX" firstAttribute="centerY" secondItem="qUj-36-hiC" secondAttribute="centerY" id="xoA-hj-Rde"/>
                         </constraints>
                     </view>

@@ -27,6 +27,10 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: false)
+        extractAnimals()
+        calculateAnimalFrequency()
+        findMostFrequentAnimal()
+        updateLabels()
     }
     
     // MARK: - IBActions:
@@ -35,15 +39,6 @@ class ResultsViewController: UIViewController {
         
     }
     
-    @IBAction func printAnswersForTesting(_ sender: Any) {
-        
-        extractAnimals()
-        calculateAnimalFrequency()
-        print(animalFrequency)
-        findMostFrequentAnimal()
-        print(finalResult)
-        updateLabels()
-    }
     
     // MARK: - Answer calculation
     
