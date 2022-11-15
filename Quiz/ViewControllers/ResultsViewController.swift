@@ -20,6 +20,7 @@ class ResultsViewController: UIViewController {
         Quiz.Animal.rabbit : 0,
         Quiz.Animal.turtle : 0
     ]
+    var finalResult: Animal!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +35,11 @@ class ResultsViewController: UIViewController {
     
     @IBAction func printAnswersForTesting(_ sender: Any) {
         
-        print("results structure:")
         extractAnimals()
         calculateAnimalFrequency()
         print(animalFrequency)
+        findMostFrequentAnimal()
+        print(finalResult)
     }
     
     // MARK: - Answer calculation
@@ -58,12 +60,14 @@ class ResultsViewController: UIViewController {
                 animalFrequency[Quiz.Animal.rabbit]! += 1
             } else {
                 animalFrequency[Quiz.Animal.turtle]! += 1
-                
             }
-            
-            
-            
-            
         }
+        
+    }
+    
+    private func findMostFrequentAnimal() {
+        let mostFrequentAnimal = animalFrequency.max{a, b in a.value < b.value }
+       print(mostFrequentAnimal)
+        finalResult = mostFrequentAnimal?.key
     }
 }
