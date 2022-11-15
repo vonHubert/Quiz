@@ -65,7 +65,6 @@ class ResultsViewController: UIViewController {
     
     private func findMostFrequentAnimal() {
         let mostFrequentAnimal = animalFrequency.max{a, b in a.value < b.value }
-       print(mostFrequentAnimal)
         finalResult = mostFrequentAnimal?.key
     }
     

@@ -20,12 +20,12 @@ class QuestionsViewController: UIViewController {
     @IBOutlet var multipleQuestionLabels: [UILabel]!
     @IBOutlet var multipleQuestionSwitches: [UISwitch]!
     
-    
     @IBOutlet var rangedQuestionStackView: UIStackView!
     @IBOutlet var rangedQuestionLabels: [UILabel]!
     @IBOutlet var rangedQuestionSlider: UISlider! {
         didSet {
             let answerCount = Float(currentAnswers.count - 1)
+            rangedQuestionSlider.maximumValue = answerCount
             rangedQuestionSlider.value = answerCount / 2
         }
     }
@@ -56,7 +56,6 @@ class QuestionsViewController: UIViewController {
         for (multipleSwitch, currentAnswer) in zip(multipleQuestionSwitches, currentAnswers) {
             if multipleSwitch.isOn {
                 chosenAnswers.append(currentAnswer)
-                //print(currentAnswer)
             }
         }
         
@@ -65,7 +64,8 @@ class QuestionsViewController: UIViewController {
     
     @IBAction func rangedAnswerButtonTapped() {
         let index = lrintf(rangedQuestionSlider.value)
-        chosenAnswers.append(chosenAnswers[index])
+        print("INDEX:\(index)")
+        chosenAnswers.append(currentAnswers[index])
         
         goToNextQuestion()
     }
